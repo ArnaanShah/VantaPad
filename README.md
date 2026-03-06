@@ -1,8 +1,8 @@
 # VantaPad 👽
 
-<INSERT LOGO HERE>
+<img width="1008" height="840" alt="VantaPadLogoImage" src="https://github.com/user-attachments/assets/e9cd6440-abc6-489b-ac82-2f7b78491f1b" />
 
-A Hackpad made as a part of Hackclub's Blueprint <LINK HACKCLUB BLUEPRINT HERE> program. VantaPad is a sleek black macropad I will use for controlling simple functions on my computer that I currently do by hand. It is one of my first hardware projects and it taught me many valuable skills such as schematic design, PCB design, Firmware programming, and more.
+A Hackpad made as a part of [Hackclub's Blueprint](https://blueprint.hackclub.com/home) program. VantaPad is a sleek black macropad I will use for controlling simple functions on my computer that I currently do by hand. It is one of my first hardware projects and it taught me many valuable skills such as schematic design, PCB design, Firmware programming, and more.
 
 ## Features ✨
 **Things included in my pad and what they do.**
@@ -19,16 +19,17 @@ A Hackpad made as a part of Hackclub's Blueprint <LINK HACKCLUB BLUEPRINT HERE> 
 I designed my PCB in KiCad 9.0! I loved using this app because it was pretty beginner friendly and intuitive. It also possessed many useful features that meant I didn't have to download another app. 
 
 Schematic:
-<INSERT IMAGE HERE>
+<img width="1783" height="1225" alt="SchematicImage" src="https://github.com/user-attachments/assets/4491e005-9162-469c-b241-5e3bb63cd14c" />
 
 PCB:
-<INSERT IMAGE HERE>
+<img width="1321" height="1080" alt="PCBImage" src="https://github.com/user-attachments/assets/30e7dabf-890f-4603-abc4-71eb7b9fd0c7" />
 
 3d VIEW:
-<INSERT IMAGE HERE>
+<img width="1848" height="1195" alt="Top3DPCBImage" src="https://github.com/user-attachments/assets/e94f7c59-11d2-4d6f-bdea-9abc10edda45" />
+<img width="1790" height="1152" alt="Bottom3dPCBImage 2026-02-26 213746" src="https://github.com/user-attachments/assets/8bc98427-ab92-4869-b239-a926d7c368be" />
 
 I used KiCad's built-in Image Converter to make a footprint of my logo:
-<INSERT IMAGE HERE>
+<img width="2111" height="1003" alt="LogoFootprintImage" src="https://github.com/user-attachments/assets/d5defac8-bcf9-48b0-93ca-87eded2744c6" />
 
 ## CAD 📐✏️
 **The CAD model I made for the case.**
@@ -36,9 +37,10 @@ I used KiCad's built-in Image Converter to make a footprint of my logo:
 I made the model of the case in Fusion 360 because I already had some previous experience with it. The case will join together using 6 screws. 4 in the corners of the case and 2 connecting the PCB to the case. The case has a 10 degree upwards tilt for ease of use as well. It has 3 separate parts, the top, the plate, and the bottom. The top has the VantaPad logo embossed near the bottom.
 
 Renders 📸:
-<INSERT IMAGE ISOMETRIC HERE>
-<INSERT IMAGE TOP FRONT HERE>
-<INSERT IMAGE TOP HERE>
+<img width="2560" height="1227" alt="VantaPadAngledImage" src="https://github.com/user-attachments/assets/df1ffe37-30e1-4f40-a8a6-7bd2144d590e" />
+<img width="2560" height="1227" alt="VantaPadIsometricImage" src="https://github.com/user-attachments/assets/2dd27e0b-25c3-461d-91e8-696fb7808ba0" />
+<img width="2560" height="1227" alt="VantaPadFrontTopImage" src="https://github.com/user-attachments/assets/7c91b467-1b47-4856-8c26-241c2f9b17bb" />
+<img width="2560" height="1227" alt="VantaPadTopImage" src="https://github.com/user-attachments/assets/bba681ce-56ff-426f-9324-a7ee02abda20" />
 
 ## Firmware 💻
 **Overview of the Firmware**
@@ -69,7 +71,8 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
 };
 ```
 - The OLED has 2 animations. Animation 1 is the idle animation ⏱️ where the VantaPad alien is slightly growing and shrinking (breathing) with occasional blinks 👀. Animation 2 occurs when a key is pressed and it makes the alien have a slight shocked 😮 face with a lightning bolt above its head for 900 ms. 
-<INSERT IMAGE OF THE ANIMATION HERE>
+<img width="2189" height="1045" alt="OLEDAnimationImage" src="https://github.com/user-attachments/assets/c00e82df-efb3-4324-a725-406b3e60984e" />
+
 - The OLED also displays useful information ℹ️ to the side of the animation. This includes what layer it is currently using and also displays my name. 
 ```
 oled_set_cursor(0, 0);
@@ -109,7 +112,7 @@ void keyboard_post_init_user(void) {
 **Miscellaneous related things**
 
 I made the logo design all in Figma and it's based off the "Space Alien" inside Halloween Stickers. 
-<INSERT IMAGE OF LOGO HERE>
+<img width="2518" height="1283" alt="image" src="https://github.com/user-attachments/assets/3cb8275d-24d1-478b-8d50-900a7d6f02b5" />
 It's honestly one of my favorite parts of the project 😅
 
 Changes I would still consider making include: 
@@ -119,9 +122,10 @@ Changes I would still consider making include:
 4. Displaying the PCB through the case somehow
 
 Some resources I used:
-- Joe Scotto's Youtube Channel (LIFESAVER 🙏)
-- QMK Docs
-- r/MechanicalKeyboards subreddit 
+- [Joe Scotto's Youtube Channel](https://www.youtube.com/@joe_scotto) (LIFESAVER 🙏)
+- [QMK Docs](https://docs.qmk.fm)
+- [r/MechanicalKeyboards subreddit](https://www.reddit.com/r/MechanicalKeyboards/) 
 
 # Thanks for reading! If you have any feedback, comments, or questions I would love to hear them and you can always reach out to me!
-<INSERT GOODBYE IMAGE>
+<img width="1264" height="1052" alt="GoodbyeImage" src="https://github.com/user-attachments/assets/3a110fe8-0a22-4200-b3d4-2d0e3140142b" />
+
