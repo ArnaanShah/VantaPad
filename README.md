@@ -18,13 +18,20 @@ A Hackpad made as a part of [Hackclub's Blueprint](https://blueprint.hackclub.co
 
 I designed my PCB in KiCad 9.0! I loved using this app because it was pretty beginner friendly and intuitive. It also possessed many useful features that meant I didn't have to download another app. 
 
-Schematic: <img width="1783" height="1225" alt="SchematicImage" src="https://github.com/user-attachments/assets/4491e005-9162-469c-b241-5e3bb63cd14c" /> 
+Schematic: 
 
-PCB: <img width="1321" height="1080" alt="PCBImage" src="https://github.com/user-attachments/assets/30e7dabf-890f-4603-abc4-71eb7b9fd0c7" />
+<img width="1783" height="1225" alt="SchematicImage" src="https://github.com/user-attachments/assets/4491e005-9162-469c-b241-5e3bb63cd14c" /> 
 
-3d VIEW: <img width="1848" height="1195" alt="Top3DPCBImage" src="https://github.com/user-attachments/assets/e94f7c59-11d2-4d6f-bdea-9abc10edda45" /> <img width="1790" height="1152" alt="Bottom3dPCBImage 2026-02-26 213746" src="https://github.com/user-attachments/assets/8bc98427-ab92-4869-b239-a926d7c368be" /> 
+PCB:
+
+<img width="1321" height="1080" alt="PCBImage" src="https://github.com/user-attachments/assets/30e7dabf-890f-4603-abc4-71eb7b9fd0c7" />
+
+3d VIEW:
+
+<img width="1848" height="1195" alt="Top3DPCBImage" src="https://github.com/user-attachments/assets/e94f7c59-11d2-4d6f-bdea-9abc10edda45" /> <img width="1790" height="1152" alt="Bottom3dPCBImage 2026-02-26 213746" src="https://github.com/user-attachments/assets/8bc98427-ab92-4869-b239-a926d7c368be" /> 
 
 I used KiCad's built-in Image Converter to make a footprint of my logo:
+
 <img width="2111" height="1003" alt="LogoFootprintImage" src="https://github.com/user-attachments/assets/d5defac8-bcf9-48b0-93ca-87eded2744c6" />
 
 ## CAD 📐✏️
