@@ -2,7 +2,16 @@
 
 <img width="1302" height="654" alt="VantaPadLogoImage" src="https://github.com/user-attachments/assets/2348d824-5976-495d-8eea-dfe12df2e56e" />
 
-A Hackpad made as a part of [Hackclub's Blueprint](https://blueprint.hackclub.com/home) program. VantaPad is a sleek black macropad I will use for controlling simple functions on my computer that I currently do by hand. It is one of my first hardware projects and it taught me many valuable skills such as schematic design, PCB design, Firmware programming, and more.
+A Hackpad made as a part of [Hackclub's Blueprint](https://blueprint.hackclub.com/home) program. VantaPad is a sleek black macropad I will use for controlling simple functions on my computer that I currently do by hand. It is one of my first hardware projects and I built it so I could learn many valuable skills such as schematic design, PCB design, Firmware programming, and more.
+
+## How to use
+**Brief intro on how to get up and running with VantaPad**
+
+1. Order all the parts based off the BOM
+2. Solder your electrical components onto your PCB based on the models and schematics
+3. Assemble your case using the hardware provided
+4. Plug your microcontroller into your computer and flash your firmware
+5. You're done! Read the rest of this doc to understand what it can do.
 
 ## Featyres 
 **What I included on my build.**
@@ -100,17 +109,20 @@ void keyboard_post_init_user(void) {
 ## BOM
 **What to buy to build this macropad. Does not include all the tools required to build it.**
 
-- 6x Cherry MX Switches
-- 6x DSA Keycaps
-- 5x M3x16mm SHCS Bolts
-- 1X M3x12mm SHCS Bolts
-- 6x M3 Hex Nuts
-- 7x 1N4148 DO-35 Diodes
-- 3x WS2812B LEDs
-- 1x 0.91" 128x32 OLED Display
-- 1x EC11 Rotary Encoder
-- 1x XIAO RP2040
-- 1x Case (3d printed parts)
+| Name | Amount | Link |
+|---|---|---|
+| Cherry MX Switches | 6 | [Adafruit](https://www.adafruit.com/product/4952)|
+| DSA Keycaps | 6 | [Adafruit](https://www.adafruit.com/product/4997?srsltid=AfmBOopDyFMg5RxxF-Evr6nBGQDyHVTH-dyfbuGdqPaHn7PWQv5c8-_Q) |
+| M3 16mm SHCS Bolts | 5 | [Accu Components](https://accu-components.com/us/metric-cap-head-screws/3822-SSCF-M3-16-A2?srsltid=AfmBOopF9mJr7xpYuq4pjtawdEtUoNOIrShH98uHL0dEVVrOUcjwKY9b) |
+| M3 12mm SHCS Bolt | 1 | [Accu Components](https://accu-components.com/us/metric-cap-head-screws/3820-SSCF-M3-12-A2) |
+| M3 Hex Nuts | 6 | [Accu Components](https://accu-components.com/us/hexagon-nuts/7888-HPN-M3-A2) |
+| In4148 DO-35 Diodes | 7 | [Adafruit](https://www.adafruit.com/product/1641?srsltid=AfmBOoragpyopdxH587co8w9Kl0W3cZMjn9bZIbP4UEYHfyiLFoC3nJv) |
+| WS2812B RGB LEDS | 3 | [Adafruit](https://www.adafruit.com/product/4684?srsltid=AfmBOop-1QOhPkmYg3AzDhOUYgR5UXpQo03Vo2tT4txB9Lo8MBpf2Z1e) |
+| 0.91" OLED Display | 1 | [Aliexpress](https://www.aliexpress.us/item/3256807215355950.html?src=google&pdp_npi=4%40dis%21USD%211.75%210.87%21%21%21%21%21%40%2112000040595474261%21ppc%21%21%21&src=google&albch=shopping&acnt=708-803-3821&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=en3256807215355950&ds_e_product_merchant_id=5377576114&ds_e_product_country=US&ds_e_product_language=en&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=19558607238&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=19566915268&gclid=Cj0KCQiAk6rNBhCxARIsAN5mQLsg54LCOzQhSObuPu2m54rcTcgSLZ9bMY2AuwFurhrSghMghQPbqsoaAguWEALw_wcB&gatewayAdapt=glo2usa)|
+| EC11 Encoder | 1 | [Adafruit](https://www.adafruit.com/product/377)|
+| Seeed Studio XIAO RP2040 | 1 | [Seeed Studio](https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html) |
+| 3d Printed Case | 1 | N/A |
+
 ## Extras 🪄
 **Miscellaneous related things**
 
