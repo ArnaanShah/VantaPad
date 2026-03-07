@@ -33,12 +33,14 @@ Schematic:
 
 PCB:
 
-<img width="1321" height="1080" alt="image" src="https://github.com/user-attachments/assets/47045d45-c8c0-4bd0-87e3-1f7e6d0bc61d" />
+<img width="1321" height="1080" alt="PCBImage" src="https://github.com/user-attachments/assets/47045d45-c8c0-4bd0-87e3-1f7e6d0bc61d" />
 
 
 3d VIEW:
 
-<img width="1848" height="1195" alt="Top3DPCBImage" src="https://github.com/user-attachments/assets/e94f7c59-11d2-4d6f-bdea-9abc10edda45" /> <img width="1790" height="1152" alt="Bottom3dPCBImage 2026-02-26 213746" src="https://github.com/user-attachments/assets/8bc98427-ab92-4869-b239-a926d7c368be" /> 
+<img width="1848" height="1195" alt="Top3dPCBImage" src="https://github.com/user-attachments/assets/f18c7e18-4da7-4993-9456-5e00ba3eedc7" />
+<img width="1790" height="1152" alt="Bottom3dPCBImage" src="https://github.com/user-attachments/assets/1486f481-1a51-4e72-8e0b-4fdf3c5d4358" />
+
 
 I used KiCad's built-in Image Converter to make a footprint of my logo:
 
