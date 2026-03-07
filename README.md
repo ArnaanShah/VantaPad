@@ -129,15 +129,14 @@ void keyboard_post_init_user(void) {
 I made the logo design all in Figma and it's based off the "Space Alien" inside Halloween Stickers. 
 <img width="2518" height="1283" alt="image" src="https://github.com/user-attachments/assets/3cb8275d-24d1-478b-8d50-900a7d6f02b5" />
 It's honestly one of my favorite parts of the project because of how cute he is 😅
-
-
+<br>
 Here are some photos of my brainstorming process. It includes some (really) rough sketches in my notebook and also online. 
 
-<img width="800" height="1163" alt="image" src="https://github.com/user-attachments/assets/f54ec1ab-7ce9-47e3-ba21-c522b634155e" />
+<img width="400" height="582" alt="image" src="https://github.com/user-attachments/assets/f54ec1ab-7ce9-47e3-ba21-c522b634155e" />
 
 _I always start with doing things in my notebook and then move forward from there. It helps me get a very basic idea of what im going to do and how to accomplish it._
 
-<img width="1088" height="610" alt="image" src="https://github.com/user-attachments/assets/5bb500e1-d8c2-4623-8095-97c3183d1c6b" />
+<img width="544" height="305" alt="image" src="https://github.com/user-attachments/assets/5bb500e1-d8c2-4623-8095-97c3183d1c6b" />
  
 _I made this image afterwards just to get a better understanding of how I wanted it to look._
 
