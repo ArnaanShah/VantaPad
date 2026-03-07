@@ -4,19 +4,19 @@
 
 A Hackpad made as a part of [Hackclub's Blueprint](https://blueprint.hackclub.com/home) program. VantaPad is a sleek black macropad I will use for controlling simple functions on my computer that I currently do by hand. It is one of my first hardware projects and it taught me many valuable skills such as schematic design, PCB design, Firmware programming, and more.
 
-## Features ✨
-**Things included in my pad and what they do.**
+## Featyres 
+**What I included on my build.**
 
-- 3x2 Keypad ⌨️ - Top row is audio control. Bottom row reopens tabs, auto-clicks, and cycles layers  
-- EC11 Encoder 🔄 - Volume, Tab Scrolling, Brightness
-- 128x32 ssd1306 OLED Display 📺 - Layer Display, Idle animation, Key press reactions
-- 3 WS2812B RGB LEDs 🚥 - Breathing effect that shines through the front of the case
-- Minimal Black Case 🐈‍⬛ - A Hexagonal shape with the logo printed at the bottom
+- Black Case - A case in the shape of a hexagon with the logo embossed near the bottom.
+- 6 Keys in 3x2 layout - Top row is used for controlling audio. Bottom row has macros for reopening tabs, auto clicking, and cycling layers.  
+- 3 RGB LEDs - Lights up a constant looping effect that fades in and out through the front of the case. 
+- Rotary Encoder - Layer 1 is Volume, Layer 2 is Tab Scrolling, Layer 3 is Brightness
+- 128x32 OLED Display - Shows important info like what layer you're on. Also, shows idle animations and reactions when you press a key.
+  
+## PCB 
+**The design around my PCB. This Includes the schematic I made, the PCB, and more.** 
 
-## PCB 🛠️
-**The design around my PCB. Includes the schematic, the PCB, and some additions.** 
-
-I designed my PCB in KiCad 9.0! I loved using this app because it was pretty beginner friendly and intuitive. It also possessed many useful features that meant I didn't have to download another app. 
+I designed my PCB in KiCad 9.0! It was fun to use this app because it was pretty beginner friendly and intuitive. It also had some extra built in features so I didn't have to download another app.
 
 Schematic: 
 
@@ -34,21 +34,21 @@ I used KiCad's built-in Image Converter to make a footprint of my logo:
 
 <img width="2111" height="1003" alt="LogoFootprintImage" src="https://github.com/user-attachments/assets/d5defac8-bcf9-48b0-93ca-87eded2744c6" />
 
-## CAD 📐✏️
-**The CAD model I made for the case.**
+## CAD
+**The CAD model I made.**
 
-I made the model of the case in Fusion 360 because I already had some previous experience with it. The case will join together using 6 screws. 4 in the corners of the case and 2 connecting the PCB to the case. The case has a 10 degree upwards tilt for ease of use as well. It has 3 separate parts, the top, the plate, and the bottom. The top has the VantaPad logo embossed near the bottom.
+I modeled this project in Fusion 360 because I've used it before. My plan is that I can assemble the whole thing with 6 screws. 4 on the actual case and 2 connecting the PCB and PCB plate to the case. I added a 10 degree tilt to make it easier to see. There are 3 separate 3d printed parts; the top, the plate, and the bottom. The top has the VantaPad logo in a different color on it because it looks lit. 😎
 
-Renders 📸:
+Pictures 📸:
 <img width="1707" height="818" alt="VantaPadAngledImage" src="https://github.com/user-attachments/assets/df1ffe37-30e1-4f40-a8a6-7bd2144d590e" />
 <img width="1707" height="818" alt="VantaPadIsometricImage" src="https://github.com/user-attachments/assets/2dd27e0b-25c3-461d-91e8-696fb7808ba0" />
 <img width="1707" height="818" alt="VantaPadFrontTopImage" src="https://github.com/user-attachments/assets/7c91b467-1b47-4856-8c26-241c2f9b17bb" />
 <img width="1707" height="818" alt="VantaPadTopImage" src="https://github.com/user-attachments/assets/bba681ce-56ff-426f-9324-a7ee02abda20" />
 
-## Firmware 💻
-**Overview of the Firmware**
+## Firmware 
+**Insight into the Firmware**
 
-I wrote the firmware in QMK. This took tons of trial and error but I am very pleased with the final result. The QMK docs can be confusing but I found many resources online that helped me as well. 
+I wrote all the firmware in QMK. I spent a long time fixing problems when writing the code. These problems were things like the firmware not compiling, not knowing how to use all my extra features, and more. The QMK docs can be confusing but I found many resources online to help me. 
 
 - The 6 keys are mapped as shown but can be easily changed
 ```
@@ -64,8 +64,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 };
 ```
-- The rotary encoder controls volume 🔊 on the base layer, scrolls tabs 📑 on the second layer, and controls brightness 🔆 on the third layer 
-  - Clicking the encoder always will mute the computer's volume
+- The rotary encoder controls volume on the first layer, scrolls through browser tabs on the second layer, and controls my monitor's brightness on the third layer 
+  - When you press down on the encoder it always mutes the volume
 ```
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [_BASE]   = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
@@ -73,10 +73,10 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [_LAYER2] = { ENCODER_CCW_CW(KC_BRID, KC_BRIU) },
 };
 ```
-- The OLED has 2 animations. Animation 1 is the idle animation ⏱️ where the VantaPad alien is slightly growing and shrinking (breathing) with occasional blinks 👀. Animation 2 occurs when a key is pressed and it makes the alien have a slight shocked 😮 face with a lightning bolt above its head for 900 ms. 
+- The OLED has 2 animations. Animation 1 is the constant looping animation where my alien is "breathing" with occasional blinks (every ~3 seconds). Animation 2 starts when any key is pressed and it basically makes the alien look surprised and have a lightning bolt above his head. 
 <img width="2189" height="1045" alt="OLEDAnimationImage" src="https://github.com/user-attachments/assets/c00e82df-efb3-4324-a725-406b3e60984e" />
 
-- The OLED also displays useful information ℹ️ to the side of the animation. This includes what layer it is currently using and also displays my name. 
+- The OLED also has some info on the left of the animation. This includes what layer it is currently using and also displays my name. 
 ```
 oled_set_cursor(0, 0);
 oled_write_P(PSTR("Arnaan Shah"), false);
@@ -97,8 +97,8 @@ void keyboard_post_init_user(void) {
     rgblight_mode_noeeprom(RGBLIGHT_MODE_BREATHING + 1); 
 }
 ```
-## BOM 📦💲
-**List of materials you'll need to buy to make this macropad. Most of these are easily accessible and the overall cost stayed low. Does not include all the tools required to build it.**
+## BOM
+**What to buy to build this macropad. Does not include all the tools required to build it.**
 
 - 6x Cherry MX Switches
 - 6x DSA Keycaps
@@ -116,9 +116,9 @@ void keyboard_post_init_user(void) {
 
 I made the logo design all in Figma and it's based off the "Space Alien" inside Halloween Stickers. 
 <img width="2518" height="1283" alt="image" src="https://github.com/user-attachments/assets/3cb8275d-24d1-478b-8d50-900a7d6f02b5" />
-It's honestly one of my favorite parts of the project 😅
+It's honestly one of my favorite parts of the project because of how cute he is 😅
 
-Changes I would still consider making include: 
+Changes I would still consider making down the line include: 
 1. More Information displayed on the OLED - WPM, Time, Date, Volume
 2. Adding more animations to the OLED - Spinning alien based on knob, startup screen
 3. Making the RGB react - Flash on key press, blink when auto-clicker's active
