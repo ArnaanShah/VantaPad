@@ -131,6 +131,7 @@ I made the logo design all in Figma and it's based off the "Space Alien" inside 
 It's honestly one of my favorite parts of the project because of how cute he is 😅
 
 _
+
 Here are some photos of my brainstorming process. It includes some (really) rough sketches in my notebook and also online. 
 
 <img width="400" height="582" alt="image" src="https://github.com/user-attachments/assets/f54ec1ab-7ce9-47e3-ba21-c522b634155e" />
