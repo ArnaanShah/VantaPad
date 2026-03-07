@@ -33,7 +33,8 @@ Schematic:
 
 PCB:
 
-<img width="1321" height="1080" alt="PCBImage" src="https://github.com/user-attachments/assets/30e7dabf-890f-4603-abc4-71eb7b9fd0c7" />
+<img width="1321" height="1080" alt="image" src="https://github.com/user-attachments/assets/47045d45-c8c0-4bd0-87e3-1f7e6d0bc61d" />
+
 
 3d VIEW:
 
