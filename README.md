@@ -13,7 +13,7 @@ A Hackpad made as a part of [Hackclub's Blueprint](https://blueprint.hackclub.co
 4. Plug your microcontroller into your computer and flash your firmware
 5. You're done! Read the rest of this doc to understand what it can do.
 
-## Featyres 
+## Features 
 **What I included on my build.**
 
 - Black Case - A case in the shape of a hexagon with the logo embossed near the bottom.
