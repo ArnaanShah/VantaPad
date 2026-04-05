@@ -26,7 +26,7 @@
 #pragma once
 
 #ifndef DEBOUNCE
-#    define DEBOUNCE 1
+#    define DEBOUNCE 3
 #endif // DEBOUNCE
 
 #ifndef DIODE_DIRECTION

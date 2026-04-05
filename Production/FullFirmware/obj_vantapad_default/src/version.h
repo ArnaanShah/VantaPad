@@ -26,7 +26,7 @@
 #pragma once
 
 #define QMK_VERSION "0.31.12-1-g37bd80e-dirty"
-#define QMK_BUILDDATE "2026-03-05-21:04:56"
+#define QMK_BUILDDATE "2026-04-05-17:35:31"
 #define QMK_VERSION_BCD 0x00310012
 #define QMK_GIT_HASH  "37bd80ece3*"
 #define CHIBIOS_VERSION "8bd61b"

@@ -5,7 +5,7 @@
     "bootloader": "rp2040",
     "diode_direction": "COL2ROW",
     "features": {
-        "bootmagic": true,
+        "bootmagic": true
     },
     "matrix_pins": {
         "cols": ["GP26", "GP27", "GP28", "GP4"],
@@ -16,9 +16,10 @@
         "sda_pin": "GP6",
         "scl_pin": "GP7"
     },
+    "debounce": 1,
     "encoder": {
         "rotary": [
-            { "pin_a": "GP2", "pin_b": "GP1", "resolution": 4 }
+            { "pin_a": "GP1", "pin_b": "GP2", "resolution": 3}
         ]
     },
     "rgblight": {
@@ -34,9 +35,6 @@
             "sat": 255,
             "val": 100
         }
-    },
-    "build": {
-        "lto": true
     },
     "processor": "RP2040",
     "url": "",
