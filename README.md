@@ -1,11 +1,10 @@
 # VantaPad 👽
 
 <img width="1302" height="654" alt="VantaPadLogoImage" src="https://github.com/user-attachments/assets/2348d824-5976-495d-8eea-dfe12df2e56e" />
+<img width="1275" height="957" alt="isoCompletedBuild" src="https://github.com/user-attachments/assets/60066814-fc52-4974-aefd-45d32663f613" />
+
 
 A Hackpad made as a part of [Hackclub's Blueprint](https://blueprint.hackclub.com/home) program. VantaPad is a sleek black macropad I will use for controlling simple functions on my computer that I currently do by hand. It is one of my first hardware projects and I built it so I could learn many valuable skills such as schematic design, PCB design, Firmware programming, and more.
-
-![ImageOfCompletedBuild]("C:\Users\thear\Downloads\builtVantaPadIso.webp")
-
 
 ## How to use
 **Brief intro on how to get up and running with VantaPad**
