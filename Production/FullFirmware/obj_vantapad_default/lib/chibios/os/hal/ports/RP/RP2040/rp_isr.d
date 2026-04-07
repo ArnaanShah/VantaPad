@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/lib/chibios/os/hal/ports/RP/RP2040/rp_isr.o: \
- lib/chibios/os/hal/ports/RP/RP2040/rp_isr.c \
+ lib/chibios/os/hal/ports/RP/RP2040/rp_isr.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -119,6 +119,7 @@
  lib/chibios/os/hal/include/hal_serial_usb.h \
  lib/chibios/os/hal/ports/RP/LLD/UARTv1/rp_uart0.inc \
  lib/chibios/os/hal/ports/RP/LLD/UARTv1/rp_uart1.inc
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

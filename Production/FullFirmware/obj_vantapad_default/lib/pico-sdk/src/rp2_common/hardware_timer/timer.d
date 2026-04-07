@@ -1,5 +1,6 @@
 .build/obj_vantapad_default/./lib/pico-sdk/src/rp2_common/hardware_timer/timer.o: \
  lib/pico-sdk/src/rp2_common/hardware_timer/timer.c \
+ keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -25,6 +26,7 @@
  lib/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
  lib/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
  lib/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

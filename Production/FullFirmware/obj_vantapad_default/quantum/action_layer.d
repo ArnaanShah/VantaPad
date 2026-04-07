@@ -1,5 +1,6 @@
 .build/obj_vantapad_default/quantum/action_layer.o: \
- quantum/action_layer.c .build/obj_vantapad_default/src/info_config.h \
+ quantum/action_layer.c keyboards/vantapad/config.h \
+ .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
  quantum/keyboard.h platforms/timer.h platforms/chibios/_timer.h \
@@ -123,6 +124,7 @@
  lib/chibios/os/hal/include/hal_serial_usb.h quantum/util.h \
  quantum/bits.h quantum/bitwise.h platforms/chibios/_util.h \
  quantum/action_layer.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

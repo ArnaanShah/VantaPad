@@ -1,4 +1,5 @@
 .build/obj_vantapad_default/quantum/keyboard.o: quantum/keyboard.c \
+ keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -136,6 +137,7 @@
  quantum/wear_leveling/wear_leveling_drivers.h \
  platforms/chibios/drivers/wear_leveling/wear_leveling_rp2040_flash_config.h \
  lib/pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/quantum/rgblight/rgblight.o: \
- quantum/rgblight/rgblight.c \
+ quantum/rgblight/rgblight.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -15,6 +15,7 @@
  quantum/keyboard.h quantum/action.h quantum/keycode.h quantum/keycodes.h \
  quantum/modifiers.h quantum/action_code.h \
  quantum/rgblight/rgblight_breathe_table.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

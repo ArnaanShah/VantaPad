@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/platforms/chibios/bootloaders/rp2040.o: \
- platforms/chibios/bootloaders/rp2040.c \
+ platforms/chibios/bootloaders/rp2040.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -123,6 +123,7 @@
  platforms/chibios/chibios_config.h quantum/compiler_support.h \
  platforms/chibios/_wait.c \
  lib/pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

@@ -1,4 +1,5 @@
 .build/obj_vantapad_default/oled_driver.o: drivers/oled/oled_driver.c \
+ keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -122,6 +123,7 @@
  lib/chibios/os/hal/include/hal_mmc_spi.h \
  lib/chibios/os/hal/include/hal_serial_usb.h \
  platforms/chibios/chibios_config.h platforms/chibios/_wait.c
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

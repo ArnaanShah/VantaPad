@@ -1,5 +1,6 @@
 .build/obj_vantapad_default/platforms/chibios/timer.o: \
- platforms/chibios/timer.c .build/obj_vantapad_default/src/info_config.h \
+ platforms/chibios/timer.c keyboards/vantapad/config.h \
+ .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
  lib/chibios/os/rt/include/ch.h lib/chibios/os/license/chlicense.h \
@@ -48,6 +49,7 @@
  lib/chibios/os/oslib/include/chfactory.h \
  lib/chibios/os/rt/include/chdynamic.h platforms/timer.h \
  platforms/chibios/_timer.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

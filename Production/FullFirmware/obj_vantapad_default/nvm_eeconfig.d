@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/nvm_eeconfig.o: \
- quantum/nvm/eeprom/nvm_eeconfig.c \
+ quantum/nvm/eeprom/nvm_eeconfig.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -31,6 +31,7 @@
  drivers/eeprom/eeprom_driver.h quantum/rgblight/rgblight.h \
  quantum/rgblight/rgblight_modes.h quantum/rgblight/rgblight_drivers.h \
  quantum/color.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

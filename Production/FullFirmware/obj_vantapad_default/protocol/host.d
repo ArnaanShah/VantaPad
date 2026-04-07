@@ -1,4 +1,5 @@
 .build/obj_vantapad_default/protocol/host.o: tmk_core/protocol/host.c \
+ keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -11,6 +12,7 @@
  quantum/logging/print.h quantum/logging/sendchar.h \
  tmk_core/protocol/usb_device_state.h quantum/keycode_config.h \
  quantum/compiler_support.h quantum/eeconfig.h quantum/action_layer.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

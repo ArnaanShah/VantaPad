@@ -1,5 +1,6 @@
 .build/obj_vantapad_default/quantum/matrix_common.o: \
- quantum/matrix_common.c .build/obj_vantapad_default/src/info_config.h \
+ quantum/matrix_common.c keyboards/vantapad/config.h \
+ .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
  quantum/matrix.h platforms/gpio.h platforms/pin_defs.h \
@@ -123,6 +124,7 @@
  platforms/chibios/_wait.c quantum/logging/print.h quantum/util.h \
  quantum/bits.h quantum/bitwise.h platforms/chibios/_util.h \
  quantum/logging/sendchar.h platforms/progmem.h quantum/logging/debug.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

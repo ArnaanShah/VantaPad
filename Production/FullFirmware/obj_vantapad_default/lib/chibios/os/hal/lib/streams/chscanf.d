@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/lib/chibios/os/hal/lib/streams/chscanf.o: \
- lib/chibios/os/hal/lib/streams/chscanf.c \
+ lib/chibios/os/hal/lib/streams/chscanf.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -120,6 +120,7 @@
  lib/chibios/os/hal/lib/streams/chscanf.h \
  lib/chibios/os/hal/lib/streams/bufstreams.h \
  lib/chibios/os/hal/lib/streams/memstreams.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

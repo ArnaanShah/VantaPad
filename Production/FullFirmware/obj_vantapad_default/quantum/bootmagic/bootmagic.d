@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/quantum/bootmagic/bootmagic.o: \
- quantum/bootmagic/bootmagic.c \
+ quantum/bootmagic/bootmagic.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -126,6 +126,7 @@
  quantum/action_layer.h quantum/action.h platforms/progmem.h \
  quantum/keycode.h quantum/keycodes.h quantum/modifiers.h \
  quantum/action_code.h quantum/bitwise.h platforms/bootloader.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

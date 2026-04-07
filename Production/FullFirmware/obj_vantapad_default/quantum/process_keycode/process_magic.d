@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/quantum/process_keycode/process_magic.o: \
- quantum/process_keycode/process_magic.c \
+ quantum/process_keycode/process_magic.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -9,6 +9,7 @@
  quantum/modifiers.h quantum/action_code.h quantum/keycode_config.h \
  quantum/compiler_support.h quantum/eeconfig.h quantum/action_layer.h \
  quantum/bitwise.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

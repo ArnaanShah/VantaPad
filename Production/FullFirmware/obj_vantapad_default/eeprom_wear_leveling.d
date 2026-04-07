@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/eeprom_wear_leveling.o: \
- drivers/eeprom/eeprom_wear_leveling.c \
+ drivers/eeprom/eeprom_wear_leveling.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -21,6 +21,7 @@
  lib/pico-sdk/src/common/pico_base/include/pico/types.h \
  lib/pico-sdk/src/common/pico_base/include/pico/error.h \
  quantum/wear_leveling/wear_leveling.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

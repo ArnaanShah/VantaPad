@@ -1,5 +1,6 @@
 .build/obj_vantapad_default/./lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: \
  lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c \
+ keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -17,6 +18,7 @@
  lib/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
  lib/pico-sdk/src/common/pico_base/include/pico/types.h \
  lib/pico-sdk/src/common/pico_base/include/pico/error.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

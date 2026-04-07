@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/quantum/keymap_introspection.o: \
- quantum/keymap_introspection.c \
+ quantum/keymap_introspection.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -144,6 +144,7 @@
  quantum/send_string/send_string.h \
  quantum/send_string/send_string_keycodes.h drivers/oled/oled_driver.h \
  quantum/encoder.h quantum/mousekey.h quantum/keymap_introspection.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

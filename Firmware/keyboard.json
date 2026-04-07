@@ -11,11 +11,6 @@
         "cols": ["GP26", "GP27", "GP28", "GP4"],
         "rows": ["GP29", "GP0"]
     },
-    "i2c": {
-        "driver": "hardware",
-        "sda_pin": "GP6",
-        "scl_pin": "GP7"
-    },
     "debounce": 1,
     "encoder": {
         "rotary": [

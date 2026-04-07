@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/usb_descriptor.o: \
- tmk_core/protocol/usb_descriptor.c \
+ tmk_core/protocol/usb_descriptor.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -139,6 +139,7 @@
  lib/chibios/os/hal/include/hal_mmc_spi.h \
  lib/chibios/os/hal/include/hal_serial_usb.h \
  tmk_core/protocol/usb_descriptor_common.h platforms/hardware_id.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

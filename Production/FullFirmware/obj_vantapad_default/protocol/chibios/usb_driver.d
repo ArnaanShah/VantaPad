@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/protocol/chibios/usb_driver.o: \
- tmk_core/protocol/chibios/usb_driver.c \
+ tmk_core/protocol/chibios/usb_driver.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -141,6 +141,7 @@
  tmk_core/protocol/chibios/usb_report_handling.h platforms/timer.h \
  platforms/chibios/_timer.h quantum/util.h quantum/bits.h \
  quantum/bitwise.h platforms/chibios/_util.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

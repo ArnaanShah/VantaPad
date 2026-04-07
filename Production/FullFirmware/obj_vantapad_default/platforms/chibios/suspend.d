@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/platforms/chibios/suspend.o: \
- platforms/chibios/suspend.c \
+ platforms/chibios/suspend.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -128,6 +128,7 @@
  quantum/programmable_button.h platforms/suspend.h platforms/wait.h \
  platforms/chibios/_wait.h platforms/chibios/chibios_config.h \
  quantum/compiler_support.h platforms/chibios/_wait.c
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

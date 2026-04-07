@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/wear_leveling.o: \
- quantum/wear_leveling/wear_leveling.c \
+ quantum/wear_leveling/wear_leveling.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -22,6 +22,7 @@
  lib/pico-sdk/src/common/pico_base/include/pico/error.h \
  quantum/wear_leveling/wear_leveling_internal.h \
  quantum/compiler_support.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:

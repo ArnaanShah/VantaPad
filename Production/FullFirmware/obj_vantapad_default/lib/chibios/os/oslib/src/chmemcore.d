@@ -1,5 +1,5 @@
 .build/obj_vantapad_default/lib/chibios/os/oslib/src/chmemcore.o: \
- lib/chibios/os/oslib/src/chmemcore.c \
+ lib/chibios/os/oslib/src/chmemcore.c keyboards/vantapad/config.h \
  .build/obj_vantapad_default/src/info_config.h \
  platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h \
  platforms/chibios/config.h quantum/rgblight/rgblight_post_config.h \
@@ -48,6 +48,7 @@
  lib/chibios/os/oslib/include/chjobs.h \
  lib/chibios/os/oslib/include/chfactory.h \
  lib/chibios/os/rt/include/chdynamic.h
+keyboards/vantapad/config.h:
 .build/obj_vantapad_default/src/info_config.h:
 platforms/chibios/boards/GENERIC_PROMICRO_RP2040/configs/config.h:
 platforms/chibios/config.h:
