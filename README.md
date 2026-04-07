@@ -4,6 +4,9 @@
 
 A Hackpad made as a part of [Hackclub's Blueprint](https://blueprint.hackclub.com/home) program. VantaPad is a sleek black macropad I will use for controlling simple functions on my computer that I currently do by hand. It is one of my first hardware projects and I built it so I could learn many valuable skills such as schematic design, PCB design, Firmware programming, and more.
 
+![ImageOfCompletedBuild]("C:\Users\thear\Downloads\builtVantaPadIso.webp")
+
+
 ## How to use
 **Brief intro on how to get up and running with VantaPad**
 
@@ -17,10 +20,10 @@ A Hackpad made as a part of [Hackclub's Blueprint](https://blueprint.hackclub.co
 **What I included on my build.**
 
 - Black Case - A case in the shape of a hexagon with the logo embossed near the bottom.
-- 6 Keys in 3x2 layout - Top row is used for controlling audio. Bottom row has macros for reopening tabs, auto clicking, and cycling layers.  
-- 3 RGB LEDs - Lights up a constant looping effect that fades in and out through the front of the case. 
-- Rotary Encoder - Layer 1 is Volume, Layer 2 is Tab Scrolling, Layer 3 is Brightness
-- 128x32 OLED Display - Shows important info like what layer you're on. Also, shows idle animations and reactions when you press a key.
+- 6 Keys in 3x2 layout - Top row is used for resetting screen, taking screenshots, and play/pause. Bottom row has macros for reopening tabs, auto clicking, and cycling layers.  
+- 3 RGB LEDs - Lights up a constant looping effect that fades in and out through the case. 
+- Rotary Encoder - Layer 1 is Volume, Layer 2 is Tab Scrolling, Layer 3 is undo/redo
+- 128x32 OLED Display - Shows important info like what layer you're on and auto clicker status. Also, shows idle animations and reactions when you press a key.
   
 ## PCB 
 **The design around my PCB. This Includes the schematic I made, the PCB, and more.** 
@@ -49,7 +52,7 @@ I used KiCad's built-in Image Converter to make a footprint of my logo:
 ## CAD
 **The CAD model I made.**
 
-I modeled this project in Fusion 360 because I've used it before. My plan is that I can assemble the whole thing with 6 screws. 4 on the actual case and 2 connecting the PCB and PCB plate to the case. I added a 10 degree tilt to make it easier to see. There are 3 separate 3d printed parts; the top, the plate, and the bottom. The top has the VantaPad logo in a different color on it because it looks lit. 😎
+I modeled this project in Fusion 360 because I've used it before. My plan is that I can assemble the whole thing with 6 screws. 4 on the actual case and 2 connecting the PCB and PCB plate to the case. I added a 10 degree tilt to make it easier to see. There are 3 separate 3d printed parts; the top, the plate, and the bottom. The top has the VantaPad logo on it because it looks lit. 😎
 
 Pictures 📸:
 <img width="1707" height="818" alt="VantaPadAngledImage" src="https://github.com/user-attachments/assets/df1ffe37-30e1-4f40-a8a6-7bd2144d590e" />
@@ -64,41 +67,51 @@ I wrote all the firmware in QMK. I spent a long time fixing problems when writin
 
 - The 6 keys are mapped as shown but can be easily changed
 ```
-║ Previous   ║ Next         ║ Pause       ║
+║ Screen Reset ║ Screenshot   ║ Play/Pause  ║
 
-║ Reopen Tab ║ Auto Clicker ║ Layer Cycle ║
+║ Reopen Tab   ║ Auto Clicker ║ Layer Cycle ║
 ```
 ```// ---------- Keymaps ----------
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT(
-        KC_MPRV, KC_MNXT, KC_MPLY, KC_MUTE, // Top row + Encoder Button
+        RESET_SCREEN, SCREENSHOT, KC_MPLY, KC_MUTE, // Top row + Encoder Button
         REOPEN_TAB, AUTO_CLICKER, KC_CYCLE_LAYERS
     ),
 };
 ```
-- The rotary encoder controls volume on the first layer, scrolls through browser tabs on the second layer, and controls my monitor's brightness on the third layer 
+- The rotary encoder controls volume on the first layer, scrolls through browser tabs on the second layer, and undos/redos on the third layer.
   - When you press down on the encoder it always mutes the volume
 ```
-const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
+const uint16_t PROGMEM encoder_map[][1][2] = {
     [_BASE]   = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
     [_LAYER1] = { ENCODER_CCW_CW(LCTL(KC_PGUP), LCTL(KC_PGDN)) },
-    [_LAYER2] = { ENCODER_CCW_CW(KC_BRID, KC_BRIU) },
+    [_LAYER2] = { ENCODER_CCW_CW(LCTL(KC_Z), LCTL(KC_Y)) },
 };
 ```
-- The OLED has 2 animations. Animation 1 is the constant looping animation where my alien is "breathing" with occasional blinks (every ~3 seconds). Animation 2 starts when any key is pressed and it basically makes the alien look surprised and have a lightning bolt above his head. 
+- The OLED has 2 animations. Animation 1 is the constant looping animation where my alien is "breathing" with occasional blinks. Animation 2 starts when any key is pressed and it basically makes the alien look surprised and have a lightning bolt above his head. 
 <img width="2189" height="1045" alt="OLEDAnimationImage" src="https://github.com/user-attachments/assets/c00e82df-efb3-4324-a725-406b3e60984e" />
 
-- The OLED also has some info on the left of the animation. This includes what layer it is currently using and also displays my name. 
+- The OLED also has some info on the left of the animation. This includes what layer it is currently using, whether the auto clicker is on, the label "Vantapad", and also my name. 
 ```
 oled_set_cursor(0, 0);
-oled_write_P(PSTR("Arnaan Shah"), false);
-    
-oled_set_cursor(0, 2);
-switch (get_highest_layer(layer_state)) {
-    case _BASE:   oled_write_P(PSTR("Layer 1"), false); break;
-    case _LAYER1: oled_write_P(PSTR("Layer 2"), false); break;
-    case _LAYER2: oled_write_P(PSTR("Layer 3"), false); break;
-}
+    oled_write_P(PSTR("Arnaan Shah"), false);
+
+    oled_set_cursor(0, 1);
+    oled_write_P(PSTR("Vantapad"), false);
+
+    oled_set_cursor(0, 2);
+    switch (get_highest_layer(layer_state)) {
+        case _BASE:   oled_write_P(PSTR("Layer 1"), false); break;
+        case _LAYER1: oled_write_P(PSTR("Layer 2"), false); break;
+        case _LAYER2: oled_write_P(PSTR("Layer 3"), false); break;
+    }
+
+    oled_set_cursor(0, 3);
+    if (auto_clicker_active) {
+        oled_write_P(PSTR("AutoClick:ON "), false);
+    } else {
+        oled_write_P(PSTR("AutoClick:OFF"), false);
+    }
 ```
 
 - The RGB LEDS are set to display red and cycle a constant breathing animation
